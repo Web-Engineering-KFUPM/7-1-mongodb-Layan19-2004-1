@@ -24,7 +24,8 @@
  * ===============================================================
  *   - 2.1:  write any username to create a database user.
  *   - 2.2: write any password.
- *    Note: Take a single screen shot of the Todo 2.1 & 2.2 before presing create database user button and save it in      Mongo-Screen-shots/TODO-2
+ * Note: Take a single screen shot of the Todo 2.1 & 2.2 before presing create database user button and save it in 
+ *      Mongo-Screen-shots/TODO-2
  *   - 2.3: click on the button to create a database user
  * 
  * ============================================
@@ -185,9 +186,10 @@
  */
 
 // import mongoose
-
+import mongoose from "mongoose";
 // establish connection
-
+const connection_string = "mongodb+srv://s202223720_db_user:m9HZbBocBDCTGY9G@cluster0.jkkxih6.mongodb.net/TestDB";
+mongoose.connect(connection_string);
 
 // define schema
 
